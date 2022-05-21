@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo - 1.0- Bieres du monde</title>
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem
+        }
+
+        h3 {
+            font-size: 1.75rem
+
+        }
+
+        h4 {
+            font-size: 1.5rem
+        }
+
+        h5 {
+            font-size: 1.25rem
+        }
+
+        h6 {
+            font-size: 1rem
+        }
+
+        .lead {
+            font-weight: 300;
+            font-size: 2rem;
+        }
+
+        .banner {
+            font-size: 2.7rem;
+            margin: 0;
+            padding: 1rem 1rem;
+            background-color: #0d1c2c;
+            color: white;
+        }
+
+        body {
+            margin: 0;
+            background-color: #38526f;
+            font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        code {
+            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 87.5%;
+            color: #e83e8c;
+            word-break: break-word;
+        }
+
+        .left-column {
+            padding: .75rem;
+            max-width: 75%;
+            min-width: 55%;
+        }
+
+        .right-column {
+            padding: .75rem;
+            max-width: 25%;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        li {
+            margin: 0.75rem;
+        }
+
+        .right-section {
+            margin-left: 1rem;
+            padding-left: 0.5rem;
+        }
+
+        .right-section h3 {
+            padding-top: 0;
+            font-weight: 200;
+        }
+
+        .right-section ul {
+            border-left: 0.3rem solid #71aeef;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .provided-code {
+            border-left: 0.3rem solid #71aeef;
+            padding-left: 10px;
+        }
+
+        .provided-code h3 {
+            font-weight: 200;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner lead">
+    <center>
+        <b>Bieres du monde</b>
+    </center>
+</div>
+
+<div class="container">
+    <div class="left-column">
+
+        <center>
+        <h2><b>Application de recherche Bieres du monde :</b></h2>
+        </center>
+
+        <center><p><u><li>Rechercher une biere par criteres :</li></u>
+Les bières sont classées suivant différents critères :<br><br>
+Elles peuvent avoir une couleur. (Blanche, Blonde, Brune, ...)<br>
+Elles peuvent avoir un type. (Trappiste, Ale, Stout, ...)<br>
+Elles sont rattachées à une marque.<br>
+Cette marque appartient à un fabricant.<br>
+Cette marque est originaire d'un pays.<br>
+        </p>
+
+        <p><u><li>Rechercher des tickets de vente :</li></u>
+L'application permet de gérer la production de tickets de ventes :<br><br>
+
+Ces tickets sont numérotés de 1 à n dans l'année.<br>
+
+Les tickets sont également horodatés.<br>
+
+Sur un ticket, il peut y avoir plusieurs lignes de ventes, mais une seule ligne d'un article donné.<br>
+
+Pour chaque ligne de vente, on a une quantité vendue.<br>
+
+Le prix à payer (TTC) est calculé en ajoutant une TVA au taux invariable de 20%.<br>
+</center>
+        </p>
+
+
+        <div class="provided-code">
+            <h3></h3>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+
+    </div>
+    <div class="right-column">
+        <div class="right-section">
+            <h3><b>Rechercher une biere :</b></h3>
+            <ul>
+                <li><input type="Marque" id="Marque" name="Marque"><b> Marque</b></li>
+                <li><input type="Couleur" id="Couleur" name="Couleur"><b> Couleur</b></li>
+                <li><input type="Type" id="Type" name="Type"><b> Type</b></li>
+                <li><input type="Pays" id="Pays" name="Pays"><b> Pays</b></li>
+            </ul>
+            <br><button id="reset" class="button">valider</button>
+        </div>
+        <div class="right-section">
+            <h3><b>Rechercher un ticket de vente :</b></h3>
+            <ul>
+                <li><input type="Article" id="Article" name="Article"><b> Article</b></li>
+                <li><input type="Marque" id="Année" name="Année"><b> Année</b></li>
+            </ul>
+            <br><button id="reset" class="button">valider</button>
+        </div>
+        <div class="right-section">
+            <h3></h3>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <h3></h3>
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
